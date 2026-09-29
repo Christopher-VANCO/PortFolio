@@ -170,10 +170,36 @@
     }
 
     .photo-card {
+      position: relative;
       display: block;
       overflow: hidden;
       aspect-ratio: 4 / 3;
       border-radius: 8px;
+    }
+
+    .A1-button {
+      display: inline-block;
+      padding: 9px 16px;
+      border: 1px solid #38bdf8;
+      border-radius: 6px;
+      background: #0f172a;
+      color: #f8fafc;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background-color 300ms ease, color 300ms ease;
+    }
+
+    .A1-button:hover,
+    .A1-button:focus-visible {
+      background: #38bdf8;
+      color: #0f172a;
+    }
+
+    .photo-card .A1-button {
+      position: absolute;
+      left: 12px;
+      bottom: 12px;
+      z-index: 1;
     }
 
     .photo-card img {
@@ -185,7 +211,7 @@
     }
 
     .photo-card:hover img,
-    .photo-card:focus-visible img {
+    .photo-card:focus-within img {
       transform: scale(1.06);
     }
 
@@ -370,9 +396,10 @@
       <a class="photo-card" href="Color.jpeg" target="_blank" rel="noopener">
         <img src="Color.jpeg" alt="Photographie Color" loading="lazy">
       </a>
-      <a class="photo-card" href="Echec.jpg" target="_blank" rel="noopener">
+      <div class="photo-card">
         <img src="Echec.jpg" alt="Photographie d'échecs" loading="lazy">
-      </a>
+        <a class="A1-button" href="Echec.jpg" target="_blank" rel="noopener">Activité 1</a>
+      </div>
       <a class="photo-card" href="Max.jpg" target="_blank" rel="noopener">
         <img src="Max.jpg" alt="Photographie Max" loading="lazy">
       </a>
