@@ -132,34 +132,14 @@
       border: 1px solid #334155;
     }
 
-    /* PROJETS */
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 25px;
-    }
-
-    .project {
-      background: #1e293b;
-      padding: 25px;
-      border-radius: 15px;
-      border: 1px solid #334155;
-      transition: 0.3s;
-    }
-
-    .project:hover {
-      transform: translateY(-8px);
-      border-color: #38bdf8;
-    }
-
-    .project h3 {
-      margin-bottom: 10px;
-      color: #38bdf8;
-    }
-
-    .project p {
-      color: #cbd5e1;
-      margin-bottom: 20px;
+    /* VIDEO */
+    .activity-video {
+      display: block;
+      width: 100%;
+      max-width: 960px;
+      aspect-ratio: 16 / 9;
+      border-radius: 8px;
+      background: #020617;
     }
 
     /* PHOTOS */
@@ -375,52 +355,15 @@
   </section>
 
 
-  <!-- PROJETS -->
+  <!-- VIDEO -->
   <section id="projets">
 
-    <h2 class="section-title">Mes Activités</h2>
+    <h2 class="section-title">Ma vidéo</h2>
 
-    <div class="projects">
-
-      <div class="project">
-        <h3>Activité 1</h3>
-
-        <p>
-          Description de mon premier projet.
-        </p>
-
-        <a href="#" class="btn">
-          Voir le projet
-        </a>
-      </div>
-
-
-      <div class="project">
-        <h3>Activité 2</h3>
-
-        <p>
-          Description de mon deuxième projet.
-        </p>
-
-        <a href="#" class="btn">
-          Voir le projet
-        </a>
-      </div>
-
-
-      <div class="project">
-        <h3>Activité 3</h3>
-
-        <p>
-          Description de mon troisième projet
-        </p>
-
-        <a href="#" class="btn">
-          Voir le projet
-        </a>
-      </div>
-
-    </div>
+    <video class="activity-video" autoplay muted loop playsinline controls aria-label="Vidéo en boucle">
+      <source src="Flim.mp4" type="video/mp4">
+      Votre navigateur ne prend pas en charge la lecture vidéo.
+    </video>
 
   </section>
 
